@@ -55,7 +55,7 @@ function Person() {
 
   return (
     <>
-      <h1>{person.firstName}</h1>
+      <h1>{person.firstName + ' ' + person.lastName}</h1>
       <h2>{person.age}</h2>
       <button onClick={handleIncreaseAge}>Increase age</button>
       <Input name="firstName" value={person.firstName} onChange={handleInputChange}/>
